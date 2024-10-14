@@ -1,26 +1,24 @@
 const express = require('express');
+const cors = require('cors'); // Import the cors package
 const app = express();
+
+// Use CORS middleware
+app.use(cors());
 
 // Port Defined
 const port = process.env.PORT || 3000;
 
-
-
-// root response, with a Hello response
-app.get("/",(req,res)=>{
-    res.send('Hello');
+// Root response, with a Hello response
+app.get("/", (req, res) => {
+    res.send('Hello World');
 });
 
-// another response route
+// Another response route
 app.get('/greet', (req, res) => {
-    res.json({ message: 'Hello from the API!' });
-  });
-
+    res.json({ "message": 'Hello from the API!' });
+});
 
 // Server listening on port
-app.listen(PORT,()=>{
-    console.log(`Server running on http://localhost: ${PORT}`);
-})
-
-
-
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+});

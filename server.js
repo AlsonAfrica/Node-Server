@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 
 // Port Defined
-const PORT = 3000;
+const port = process.env.PORT || 3000;
+
+
 
 // root response, with a Hello response
 app.get("/",(req,res)=>{

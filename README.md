@@ -8,7 +8,7 @@ This project demonstrates how to deploy a simple Node.js server on a free hostin
 - Basic testing with a "Hello World" route and greet route that displays "{"message":"Hello from the API!"}"
   
 ## Technologies
-- Node
+- Node Js
 - Express
 - Cors
 ## User Interface
@@ -16,10 +16,13 @@ This project demonstrates how to deploy a simple Node.js server on a free hostin
 
 
 ## Requirements
-
+- Node (latest version)
 
 ## Set Up the Node.js Application
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+
+
+
